@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <form>
+    <form action="{{ url_for('submit_form') }}" method="post" class="form">
         <p>Qual é o seu meio de transporte?</p>
         <select id="dropdown">
             <option value="walk"> A pé</option>
