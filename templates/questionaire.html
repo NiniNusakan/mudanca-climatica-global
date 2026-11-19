@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <p>Qual é o seu meio de transporte?</p>
+        <select id="dropdown">
+            <option value="walk"> A pé</option>
+            <option value="car"> Carro</option>
+            <option value="motorcycle"> Moto</option>
+            <option value="bycicle"> Bicicleta</option>
+            required
+        </select>
+        <p>Quanto você pesa?</p>
+        <select id="dropdown">
+            <option value="-40kg"> Menos de 40kg</option>
+            <option value="40kg-60kg"> 40kg - 60kg</option>
+            <option value="60kg-80kg"> 60kg - 80kg</option>
+            <option value="80kg+"> 80kg+</option>
+            required
+        </select>
+        <p>Qual sua altura?</p>
+        <select id="dropdown">
+            <option value="-1,40"> menos de 1,40</option>
+            <option value="1,40-1,60"> 1,40 - 1,60</option>
+            <option value="1,60-1,80"> 1,60 - 1,80</option>
+            <option value="1,80+"> 1,80+</option>
+            required
+        </select>
+        <p>Você fuma?</p>
+        <select id="dropdown">
+            <option value="yes"> Sim</option>
+            <option value="não"> Não</option>
+            required
+        </select>
+        <input type="submit" id="submit">
+        <form_action="{{ url_for('submit_form') }}" method="post" class="form"></form_action>
+    </form>
+</body>
+</html>

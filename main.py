@@ -7,9 +7,24 @@ app = Flask(__name__)
 def home():
 	return render_template("index.html")
 
+
 @app.route("/login")
 def login():
 	return render_template("login.html")
+
+
+@app.route("/diary")
+def diary():
+	return render_template("diary.html")
+
+
+@app.route("/questionaire")
+def questionaire():
+	return render_template("questionaire.html")
+
+@app.route("/submit", methods=["POST"])
+def submit_form():
+	return render_template("results.html")
 
 
 if __name__ == "__main__":
