@@ -10,7 +10,7 @@
     <h1>Bem vindo à CALCO2LADORA!</h1>
     <h2>Como deseja iniciar?</h2>
 </body>
-    <a href="login.html" class="button">Ir para a página de Login?</a>
-    <a href="diary.html" class="button">Ir para o diário?</a>
-    <a href="questionaire.html" class="button">Ir para o questionário?</a>
+    <a href="{{ url_for('login') }}" class="button">Ir para a página de Login?</a>
+    <a href="{{ url_for('diary') }}" class="button">Ir para o diário?</a>
+    <a href="{{ url_for('questionaire') }}" class="button">Ir para o questionário?</a>
 </html>
